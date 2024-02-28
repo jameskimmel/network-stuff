@@ -59,5 +59,5 @@ Let us look at the typical errors I see when people install a mesh node. For sim
 
 What we see is the router on the left and how far the signal reached. 
 Now if we install a repeater in the room3, the signal the repeater gets would be poor. But since the iPhone in the garden is not that far away, it would show a perfect full signal. This is true, it has full signal, but to a repeater that receives poor signal. 
-So if we really can't use a cable connection for the repeater we should place it in room 2 or even better in room 1 and another one in room 2 and 3.
+So if we really can't use a cable connection for the repeater we should place it in room 2 or even better in room 1 and another one in room 2 and 3. That way you get good signal everywhere and ok signal in the garden.  Or you could save a lot of money and energy by just installing a wired repeater in room 3 and get good signal everywhere including the garden. 
 
