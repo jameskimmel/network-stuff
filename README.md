@@ -38,7 +38,7 @@ See above
 
 Band steering is an added layer of complexity that sometimes does not work well. 
 My rather controversial opinion is that if I can't get 5GHz, I rather have no connection at all. 2,4GHz has bad latency and so many interfering Wi-Fis, that it is mostly useless besides IoT devices.
-It is also not great for VoIP, because it takes some time to switch between bands. If I leave my house on a call, I rather want my phone to switch to cellular directly without connecting to 2,4 in between. Wi-Fi should combat that issue, by allowing clients to simultaneously connect to both bands. 
+It is also not great for VoIP, because it takes some time to switch between bands. If I leave my house on a call, I rather want my phone to switch to cellular directly without connecting to 2,4 in between. Wi-Fi 7 should address that issue, by allowing clients to simultaneously connect to both bands. 
 
 *But the 5GHz-only network does not reach my garden!*
 
