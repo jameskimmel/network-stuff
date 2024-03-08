@@ -1,4 +1,4 @@
-Wi-Fi is a wonky construct, full of bugs and badly written firmware. You wonder how bad it is? Well, [even companies like Google struggle with Wi-F](https://www.reuters.com/technology/googles-newest-office-has-ai-designers-toiling-wi-fi-desert-2024-03-07/).
+Wi-Fi is a wonky construct, full of bugs and badly written firmware. You wonder how bad it is? Well, [even companies like Google struggle with Wi-Fi](https://www.reuters.com/technology/googles-newest-office-has-ai-designers-toiling-wi-fi-desert-2024-03-07/).
 There are millions of combinations between devices and access points and what OS they are currently running. Because of this, the best way to troubleshoot Wi-Fi and eliminate potential pitfalls is to reduce complexity.
 
 **These are my recommended settings:**
