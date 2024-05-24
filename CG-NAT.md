@@ -1,6 +1,6 @@
 coming soon :)
 
-# What CG-NAT is, how to detect it, why it is bad, and what you can do about it
+# What CG-NAT is, how to detect it, why it is bad, what can you do about it
 
 ## How to test if you suffer from CG-NAT
 
