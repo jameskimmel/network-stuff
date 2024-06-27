@@ -29,11 +29,11 @@ When using a CG-NAT IPv4 you share the same IP with other people. If an attacker
 ## What is NAT?
 To better understand what CG-NAT is, it helps to first understand what NAT is.  
 
-This picture assumes a normal setup without CG-NAT.  
-The public IPv4 is 215.84.156.8 and the local IP of the router is most of the time 192.168.1.1.  
+This picture is an internet connection without CG-NAT.  
+The public IPv4 is 215.84.156.8 and the local IP of your router probablly is 192.168.1.1.  
 Your router has a built in DHCP server, that serves IPs to your PC, Playstation and NAS.  
 In your example this is 192.168.1.2, 192.168.1.3, 192.168.1.4.  
-But these IPs are only internal! If any of these devices connect to the internet, from the outside they all come with the IPv4 215.84.156.8.  
+But these IPs are only internal! If any of these devices connect to the internet, from the outside they all come with the IPv4 215.84.156.8,  
 No matter if you play a game on PSN or go on reddit on your PC.  
 
 ![image](https://github.com/jameskimmel/network-stuff/assets/17176225/62b3c6d6-e402-48e3-8363-f4f65afc53bb)
@@ -44,19 +44,21 @@ Now imagine that you want to setup OpenVPN Server on your NAS (or any other serv
 So you are now on the road with your moblie and want to establish a VPN connection. On your OpenVPN Client on your phone, you set the target to be your public IPv4.  
 In this example that would be 215.84.156.8. Your connection goes from your phone to your router. 
 Your router can not know that you want to connect to to your NAS on 192.168.1.4. Here is where NAT comes in. 
-You create a NAT rule on your router, that every traffic that arrives on port 1194 should be redirected to 192.168.1.4.  
+You create a NAT rule on your router, so that every traffic that arrives on port 1194 should be redirected to 192.168.1.4.  
 That way your phone can establish a VPN connection to your NAS.
 
 This has some technical limitation. The only way for your router to know where to route incoming traffic is by port. So you can't have two services on port 1194. 
-If you have a VPN server on 192.168.1.2 and 192.168.1.4 and there is incoming traffic on port 1194, the router does not know where to route it. 
+If you have a VPN server on 192.168.1.2 and 192.168.1.4 and there is incoming traffic on port 1194, your router does not know where to route it. 
 
-Of course you also need to set a static IPv4 to your OpenVPN server so that the local IP never changes and that NAT rule could potentially route 1194 to the wrong device. 
+You also need to set a static IPv4 to your NAS so that the local IP never changes and that NAT rule all of a sudden routes to your Playstation, because your Playstation randomly got the IP 192.168.1.4. 
 
-Some devices like the playstation will try to use your routers UPnP, to automatically create NAT rules for you. Then you also don't need fixed IPs. Since UPnP is a security concern, a lot of routers have it disabled by default. 
+Some devices like the PlayStation will try to use your routers UPnP, to automatically create NAT rules for you. Then you also don't need fixed IPs. Since UPnP is a security concern, a lot of routers have it disabled by default. 
 
-NAT can behave pretty wonky on consumer routers. NAT is a workaround for an old problem. In the beginning of the internet, you only had one single computer that was directly connected to your router. There was no need for multiple IPs. When people started to have multiple devices in their homes, NAT was a hacky solution to that problem. 
+NAT can behave pretty wonky on consumer routers. 
 
-BTW: That problem is completly solved with IPv6. Instead of getting only a single IPv4 from your ISP for all your devices, you get prefix with at least millions of IPs. 
+NAT is a workaround for an old problem. In the beginning of the internet, you only had one single computer that was directly connected to your modem. There was no need for multiple IPs. When people started to have multiple devices in their homes, NAT was a hacky solution for that problem. 
+
+BTW: That problem is solved with IPv6. Instead of getting only a single IPv4 from your ISP for all your devices, you get IPv6 prefix. That contains at least millions of IPs. 
 That way every device can get its own public IPv6. 
 
 
@@ -80,3 +82,5 @@ Some VPNs offer portforwarding. A VPN has a negative performance impact and will
 
 ### Use IPv6 
 IPv6 does not need NAT, since all devices can get their own IP. Problem is that if you setup your OpenVPN server on IPv6 but your phone carrier has to support IPv6 too. 
+IPv6 also can offer better privacy and security by obsurity. Most devices use some kind of SLAAC with privacy extension to randomly generate and use a new IPv6 inside your prefix. 
+It is also is less prone to port scanning, because there are to many IPs for attackers to randomly scan. 
