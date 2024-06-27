@@ -24,10 +24,15 @@ Sometimes your router also gets included in these hops. If your first hop is som
 ## Why should I care?
 If you don't have a public IPv4 but a CG-NAT IPv4, you can't host any services. No VPN, no webserver nothing.  
 Games will sometimes show something like "NAT strict".  
-When using a CG-NAT IPv4 you share the same IP with other people. If an attacker or hacker gets blocked, you could also get blocked, because you have the same IPv4 as the attacker. 
+When using a CG-NAT IPv4 you share the same IP with other people. If an attacker gets blocked, you could also get blocked, because you have the same IPv4 as the attacker. 
 
 ## What is NAT?
-To better understand what CG-NAT is, it helps to first understand what NAT is. 
+To better understand what CG-NAT is, it helps to first understand what NAT is.  
+This picture assumes a normal setup without CG-NAT.  
+The public IPv4 is 215.84.156.8 and the local IP of the router is most of the time 192.168.1.1.  
+Your router has a built in DHCP server, that serves IPs to your PC, Playstation and NAS.  
+
+
 
 
 ## What is CG-NAT?
