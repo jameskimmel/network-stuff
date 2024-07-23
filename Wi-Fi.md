@@ -17,11 +17,15 @@ SSID: SunnyGarden
 - 5GHz only  
 - WPA3 only  
 - If WPA3 only is not possible, WPA2 only.   
-- No WPA2/3 mixed mode!  
-- channel width depends on how many other Wi-Fis there are. But in general, if you don't need a lot of bandwidth, like sending videos from your Laptop to your NAS, choose 20MHz.  
+- No WPA2/3 mixed mode!
+  
+channel settings for SunnyGarden if you expirience problems: 
+- channel width will be selected based on how busy your neighborhood is. But in general, if you don't need a lot of bandwidth, like sending huge files from your Laptop to your NAS, choose 20MHz.
+- Channels should be automatically selected, based on your neighbors Wifi. If the channels 38 or 46 are not busy, you can select one of these channels with 20MHz. These are the only two channels that don't need DFS to detect radar. I saw some buggy firmeware implementations for DFS from AVM. By not using DFS, you can rule out these errors. 
 
 Not every AP will allow you to configure all of these settings.
-These settings are not written in stone and are mostly valid for Wi-Fi 6. Wi-Fi 7 should solve some problems like bandsteering.
+These settings are not written in stone and are mostly valid for Wi-Fi 6. They could change over time. 
+For example, Wi-Fi 7 should solve some problems like bandsteering, since it can be connected to 2,4 and 5GHz at the same time. 
 
 **FAQ**  
 
