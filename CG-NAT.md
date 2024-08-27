@@ -37,7 +37,7 @@ This picture is an internet connection without CG-NAT.
 The public IPv4 is 215.84.156.8 and the local IP of your router probablly is 192.168.1.1.  
 Your router has a built in DHCP server, that serves IPs to your PC, Playstation and NAS.  
 In your example this is 192.168.1.2, 192.168.1.3, 192.168.1.4.  
-But these IPs are only internal! If any of these devices connect to the internet, from the outside they all come with the IPv4 215.84.156.8,  
+But these IPs are only internal! If any of these devices connect to the internet, from the outside they all have the IP IPv4 215.84.156.8.  
 No matter if you play a game on PSN or go on reddit on your PC.  
 
 ![image](https://github.com/jameskimmel/network-stuff/assets/17176225/62b3c6d6-e402-48e3-8363-f4f65afc53bb)
