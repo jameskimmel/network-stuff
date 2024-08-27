@@ -24,7 +24,7 @@ Sometimes your router also gets included in these hops. If your first hop is som
 ## Why should I care?
 If you don't have a public IPv4 but a CG-NAT IPv4, you can't host any services. No VPN, no webserver nothing.  
 Games will sometimes show something like "NAT strict".  
-When using a CG-NAT IPv4 you share the same IP with other people. If an attacker gets blocked, you could also get blocked, because you have the same IPv4 as the attacker. 
+When using a CG-NAT IPv4 you share the same IP with other people. If someone from with the same IPv4 gets blocked or rate limted, it will also apply to you, because you have the same IPv4 as the other random person. 
 
 ## What is NAT?
 To better understand what CG-NAT is, it helps to first understand what NAT is.  
