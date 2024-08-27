@@ -9,9 +9,9 @@ To check what your IP is, you can use sites like https://www.whatismyip.com or h
 https://www.wieistmeineip.de and look for your IPv4.  
 If your IP is between 100.64.0.0 - 100.127.255.255 you have CG-NAT.  
 Beware, just because your IP is not in that range, does not mean that you don't have CG-NAT!  
-You also need to run test 2 to rule that out.  
+You also need to run test2 to rule that out.  
 
-### Test 2: Based on hops
+### Test2: Based on hops
 You can also check if you have CG-NAT based on how many hops it takes to reach your IPv4. 
 If it takes one hop, you don't have CG-NAT. 
 If it takes two hops, you have CG-NAG. 
