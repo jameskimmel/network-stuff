@@ -26,7 +26,7 @@ tracert -4 215.84.156.8
 Sometimes your router also gets included in these hops. If your first hop is something like 192.168.X.X or 172.16.X.X, ignore that line and don't count it as a hop!
 
 ## Why should I care?
-If you don't have a public IPv4 but a CG-NAT IPv4, you can't host any services. No VPN, no webserver nothing.  
+If you don't have a public IPv4 but a CG-NAT IPv4, you can't host any services over IPv6. No VPN, no webserver nothing.  
 Games will sometimes show something like "NAT strict".  
 When using a CG-NAT IPv4 you share the same IP with other people. If someone from with the same IPv4 gets blocked or rate limted, it will also apply to you, because you have the same IPv4 as the other random person. 
 
