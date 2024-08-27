@@ -60,7 +60,7 @@ Some devices like the PlayStation will try to use your routers UPnP, to automati
 
 NAT can behave pretty wonky on consumer routers. 
 
-NAT is a workaround for an old problem. In the beginning of the internet, you only had one single computer that was directly connected to your modem. There was no need for multiple IPs. When people started to have multiple devices in their homes, NAT was a hacky solution for that problem. 
+NAT is a workaround for an old problem. In the beginning of the internet, you only had one single computer that was directly connected to your modem. There was no need for multiple IPs. When people started to have multiple devices in their homes, ISPs did not start handing out multiple IPv4. Instead you we put devices behind a router that does NAT if needed.  
 
 BTW: That problem is solved with IPv6. Instead of getting only a single IPv4 from your ISP for all your devices, you get IPv6 prefix. That contains at least millions of IPs. 
 That way every device can get its own public IPv6. 
