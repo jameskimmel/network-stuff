@@ -50,7 +50,7 @@ If you take one of your problems step by step with a fresh mind, you will see th
 Most of the time, you don't even need to configure anything in IPv6 and it will work just out of the box. 
 Here are some services that are most of the time no longer needed in IPv6:
 - A DHCP server: In IPv6 devices can self assign an IP so they don't need DHCP
-- A static DHCP IPv4 leases for a device: In IPv6, devices already have two static IPv6s
+- A static DHCP leases or manually setting a static IPv4 on the device: In IPv6, devices already have two static IPv6s
 - NAT: That was just a wonky workaround because you only got one IPv4
 - The security nightmare UPNP: No longer needed, since we don't do NAT
 
