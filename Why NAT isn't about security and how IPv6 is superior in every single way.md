@@ -2,11 +2,11 @@ That is a hard one! It creates a lot of confusion and IPv4 people have a hard ti
 Don't try to apply your IPv4 knowledge and wisdom onto IPv6. It won't work.
 In my opinion, the easiest way to understand the topic is by using a simple example. 
 
-**Let’s assume I want to access the webpage of my NAS.**
+**Let’s assume I want to remotely access the webpage of my NAS.**
 
 Probably not a great idea, since my NAS is probably very insecure, full of bugs, and has no 2FA nor any brute force protection. 
 And without certs, there also could be a man in the middle attack without me noticing.
-But still, I wanna access my NAS webpage.  
+But still, I wanna access my NAS webpage from remote.  
 
 For IPv4 I have a problem. Since my ISP only gave me one single IPv4, I use that IPv4 for my router. 
 I don’t have another IPv4 for my NAS (unless a pay huge amount for business lines with multiple static IPv4). So I need the wonky workaround NAT.
