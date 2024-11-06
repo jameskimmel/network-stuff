@@ -55,4 +55,4 @@ Here are some services that are most of the time no longer needed in IPv6:
 - The security nightmare UPNP: No longer needed, since we don't do NAT
 
 
-Since not all software is ready for a changing prefix, all none shite ISPs will give you a static prefix.
+Since not all software is ready for a changing prefix, all none shite ISPs will give at least at least a /56 static prefix.
